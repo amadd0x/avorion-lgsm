@@ -4,11 +4,6 @@ job "avorion" {
   namespace   = "default"
   priority    = 100
 
-  constraint {
-    attribute = "${node.unique.name}"
-    value     = "daedalus"
-  }
-
   group "avorion" {
     count = 1
 
